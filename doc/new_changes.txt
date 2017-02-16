@@ -1,1 +1,0 @@
-18/02/2015:	Fixed bug in Rect.m that causes incorrect number of ghost cells when the numerical flux and reconstruction method require different number of ghost cells (thanks, Deep Ray!).
