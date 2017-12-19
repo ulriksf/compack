@@ -83,8 +83,12 @@ classdef ModelBase < handle
 	
 		
 	methods (Abstract)
-		% Flux function in d-direction
-		ret = f(o, U, d);
+		% Flux function in a given direction
+		%
+		% Input:
+		% U:	The array of conserved variables
+		% dir:	Either 1 or 2, indicating x- or y-direction.
+		ret = f(o, U, dir);
 	end
 	
 	

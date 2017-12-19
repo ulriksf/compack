@@ -15,13 +15,13 @@ classdef SW < Model.ModelBase
 		function ret = f(o, U, dir)
 			dir2 = 4-dir;
 			
-			h = U(1,:);
-			m = U(dir+1, :);
-			m2 = U(dir2, :);
+			h = U(1,:);				% Water depth
+			m = U(dir+1, :);		% Momentum in the direction 'dir'
+			mOrth = U(dir2, :);		% Momentum in the direction orthogonal to 'dir'
 			ret = zeros(size(U));
 			ret(1,:) = m;
 			ret(dir+1,:) = 0.5*o.grav*h.*h + m.*m./h;
-			ret(dir2,:) = m.*m2./h;
+			ret(dir2,:) = m.*mOrth./h;
 		end
 		
 		

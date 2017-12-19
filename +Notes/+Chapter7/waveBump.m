@@ -69,7 +69,7 @@ function waveBump
 		title('');
 		
 		% Save to disk
-		filename = sprintf('wave_smooth_t=%.1f.png', t);
+		filename = sprintf('wave_smooth_t=%.1f', t);
 		Plot.saveFig(filename);
 	end
 end

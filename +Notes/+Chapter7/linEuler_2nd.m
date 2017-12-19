@@ -67,7 +67,7 @@ function linEuler_2nd
 		title('');
 		
 		% Save to disk
-		filename = sprintf('output/linEuler_2nd_%s.png', varname{var});
+		filename = sprintf('linEuler_2nd_%s', varname{var});
 		Plot.saveFig(filename);
 	end
 end
