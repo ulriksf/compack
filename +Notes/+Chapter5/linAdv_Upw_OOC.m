@@ -15,7 +15,7 @@ function [nx, err, ooc] = linAdv_Upw_OOC
 
 	%% Calculate rate of convergence
 	% Exact solution of the linear advection equation
-	exact = Error.exact_LinAdv(conf.initial);
+	exact = Error.exact_linAdv(conf.initial);
 	% Which mesh sizes to compute over
 	nx = 10 * 2.^(1:8);
 	% Calculate the approximate rate of convergence.
