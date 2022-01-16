@@ -1,4 +1,4 @@
-function linAdv_LW_Upw_sine
+function linAdv_beamWarm_Upw_sine
 	conf = Configuration;
 	conf.model = Model.LinAdv;
 	conf.model.a = 1;
@@ -34,5 +34,5 @@ function linAdv_LW_Upw_sine
 	title('');
 	legend({'Exact', 'Beam-Warming', 'Upwind'});
 	Plot.makeNice();
-	Plot.saveFig('LW,upwind_comparison');
+	Plot.saveFig('BW, upwind_comparison');
 end
