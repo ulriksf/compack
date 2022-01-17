@@ -13,7 +13,7 @@ function [ dx, err, ooc ] = calcOOC( config, exact, nx, p, relative )
 %			  Default is false.
 %
 %   Example:
-%      exact = Error.exact_LinAdv(config.initial);
+%      exact = Error.exact_linAdv(config.initial);
 %      [dx,err,ooc] = calcOOC(exact, config, 100:100:500, 1);
 %   Calculates the order of convergence of the scheme specified by the
 %   Configuration object 'config' over mesh sizes 100,200,...,500 in the
